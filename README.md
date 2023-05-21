@@ -26,3 +26,6 @@ If the code is added into the staging area after making the changes and then at 
 
 then we have to use git diff -chached or git diff -filename to understand specific file name changes 
 
+git log can be used to get the history of all the changes made to the repository 
+
+
