@@ -1,1 +1,1 @@
-this is a file with some content 
+this is a file with some content    
