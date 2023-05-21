@@ -55,3 +55,24 @@ Let's say that I am searching for a commit that has a keyword diff in it then we
 
 After renaming the file and saving it Git will think that a new file with new name is created bu new contents and old file is deleted in our case we had chnaged the name of example.txt file to firstexample.txt and git will think that example.txt is deleted and a new file called 
 firstexample.txt is created with new contents but after we added the file to the staging area then git understands that the file has been renamed . 
+
+git restore --stagged filename 
+
+to restore or undo the file changes those were in the staging area 
+
+To Explain more ,For example if made changes in the two files let's say Readme.md and FirstExample.txt then  we can use git add . commad to add the changes that we were made for the two files to the staging area  ,
+now if you don't wanna add one file let's say readme file into the staging area you wanna undo it then we can use 
+
+git restore -stagged filename in this case 
+git restore -stagged README.md 
+
+this will restore the file from stagging area to the original file 
+
+so now the status is only one file is in the staging area not all
+
+use can also use git restore -stagged . to move all the files or undo the files from stagged area to original files . 
+
+
+we can also use git restore .  which is so powerful command to undo all the changes to the two files to the original content 
+
+git log --oneline  to see all the commits in oneline 
