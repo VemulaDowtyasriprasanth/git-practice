@@ -53,3 +53,5 @@ Let's say that I am searching for a commit that has a keyword diff in it then we
 
 --grep="diff" If we had committed something on diff it will search for all the commits in diff and give us that specific commit 
 
+After renaming the file and saving it Git will think that a new file with new name is created bu new contents and old file is deleted in our case we had chnaged the name of example.txt file to firstexample.txt and git will think that example.txt is deleted and a new file called 
+firstexample.txt is created with new contents but after we added the file to the staging area then git understands that the file has been renamed . 
